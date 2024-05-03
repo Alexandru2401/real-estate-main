@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --space-sm: 20px;
+    --space-md: 30px;
+    --space-lg: 50px;
+}
+
+
+
+.card-button {
+    width: 130px;
+    height: auto;
+    background-color: #008DDA;
+    color: #f7eedd;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
+    font-weight: bold;
+}
+
+.rental-button {
+    width: 130px;
+    height: auto;
+    background-color: #41C9E2;
+    color: #f7eedd;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
+}
+/* Navbar style */
+.bg-container {
+    height: 70vh;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #008DDA;
+    position: absolute;
+    top: var(--space-sm);
+    left: 5%;
+    padding: 10px;
+}
+
+.navbar .img-container{
+    margin: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0px 35px;
+    font-size: 25px;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: #f7eedd;
+}
+
+ul a:hover {
+    border-bottom: 1px solid #ACE3E1;
+    color: #ACE3E1;
+}
+/* Navbar style ends here */
+
+/* Style first-section: about-us  */
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-section .img-container {
+    margin: var(--space-lg) auto;
+}
+.about-section img {
+    width: 100%;
+    margin: 80px auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg);
+}
+.about-us-description {
+    font-size: 30px;
+    margin: var(--space-sm) auto;
+}
+.about-title {
+    font-size: var(--space-lg);
+    margin:0px 0px var(--space-lg) 0px ;
+}
+
+.about-us-quote {
+    font-size: 30px;
+}
+
+.about-us-quote span {
+    color: #008DDA;
+}
+
+.about-second-title {
+    font-size: 40px;
+    margin: 0px 0px var(--space-lg) 0px ;
+}
+
+/* Why TopRent style ends here */
+
+/* Style Why topRent */
+.why-top-rent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: var(--space-lg) auto 0px auto;
+}
+.why-top-rent .section-container {
+    padding: var(--space-lg);
+}
+
+.why-top-rent .card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-top-rent .card-container .card {
+    width: 30%;
+    margin: var(--space-sm) 0;
+}
+
+.why-top-title {
+    font-size: 30px;
+    padding: var(--space-md) 0px;
+}
+
+.why-top-rent .quote-paragraph{
+    font-size: 30px;
+    margin: 40px 0px;
+}
+ .why-us {
+    margin: var(--space-lg) 0;
+}
+
+/* Why TopRent style ends here */
+
+
+/* Home page style*/
+.home-title{
+    font-size: 30px;
+    padding: var(--space-lg) 0px;
+}
+.section-container {
+    background-color: #e0f1fc;
+    padding-bottom: var(--space-lg);
+    width: 100%;
+}
+
+.see-offers-title {
+    margin-top: var(--space-lg);
+}
+
+/* Home page style ends here */
+
+/* Listed-section style */
+.rent-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: var(--space-lg);
+} 
+
+.rent-section .listed-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.rent-section-card .card-img {
+    width: 400px;
+    height: auto;
+}
+.card-title{
+    font-size: 25px;
+    color: #008DDA;
+    margin: 0px 0px var(--space-md) 0px;
+}
+.rent-section .rent-section-card {
+    margin-top: var(--space-lg);
+}
+.rent-section .button-container {
+    display: flex;
+    justify-content: space-evenly;   
+    margin: var(--space-md) 0; 
+}
+
+/* Listed-section style ends here */
+
+/* Product container style */
+.see-offers-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.see-offers-container > h2 {
+    font-size: 40px;
+}
+/* Product container style ends here */
+
+/* Footer style */
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ACE3E1;
+    height: 100px;
+    padding: 60px;
+    width: 100%;
+}
+
+.footer-section p {
+    font-size: 20px;
+}
+
+/* Footer style ends here */
+
+/* Responsive navbar */
+.nav-btn {
+    display: none;
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: black;
+}
+
+@media  (max-width:768px){
+    .nav-btn {
+        display: block;
+        position: absolute;
+        right: var(--space-sm);
+    }
+    .navbar .img-container img{
+        width: 100px;
+        height: auto;
+    }
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        left: 0;
+        top: 100%;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        background-color: #41C9E2;;
+    }
+    .navbar-links-mobile li {
+        margin: 10px var(--space-sm);
+        font-size: 25px;
+    }
+    .navbar-links-mobile a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Responsive navbar ends here */
+
+    /* About us section */
+    .about-section .img-container {
+        width: 90%;
+    }
+
+    .about-section img {
+        margin: var(--space-md) auto;
+    }
+
+    .content-container {
+        padding: var(--space-md);
+    }
+    .about-title {
+        margin: 0px 0px var(--space-md) 0px;
+    }
+    .about-second-title {
+        margin: 0px 0px var(--space-md) 0px;
+    }
+
+    /* Why-top-rent */
+    .why-top-rent {
+      padding:0;
+      margin: 0;
+    }
+    .why-top-rent .section-container {
+      padding: var(--space-md) var(--space-md);
+    }
+
+    .why-top-rent .card-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .why-top-rent .card-container .card {
+        width: 100%;
+        margin: var(--space-sm) auto;
+    }
+
+    .why-top-rent .card-container .card img {
+        margin: var(--space-sm) 0;
+    }
+
+    /* Rent-section */
+    .see-offers-container .see-offers-title {
+        margin: var(--space-md) auto;
+    }
+    .rent-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: var(--space-md);
+    }
+    .rent-section .listed-section-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .rent-section .rent-section-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .rent-section .home-title {
+        padding: var(--space-md) auto;
+    }
+    
+    .rent-section-card .card-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* Card details */
+
+.details-section-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.details-card .card-details-title{
+    color: #008DDA;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.details-card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    border: 1px solid red;
+    width: 40%;
+}
+.details-card img {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+}
+.details-card .card-address {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.details-card .card-description {
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.details-card .card-price {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.details-card .rental-button {
+    margin: 20px auto;
+}
