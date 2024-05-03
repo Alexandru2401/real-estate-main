@@ -13,17 +13,7 @@ import { ProductContainer } from './components/ProductContainer';
 import { favouriteReducer, initialState } from './store/reducer';
 import { FavouriteContext } from './store/context';
 function App () {
-  const [data, setData] = useState([]);
-    useEffect(() => {
-        fetch('https://mock.apidog.com/m2/520918-481047-default/6967467')
-          .then((response) => response.json())
-          .then((data) =>{
-            const {properties} = data;
-            setData(properties);
-            console.log(properties);
-          })
-      }, []);
-
+  
       const [state, dispatch] = useReducer(favouriteReducer, initialState);
 
       const favoriteContextValue = {

@@ -1,6 +1,13 @@
-export function addToFavourites(properties){
+export function addToFavourites(property){
     return {
         type: "ADD_TO_FAVOURITES",
-        payload: properties      
+        payload: property      
     };
+}
+
+export function removeFromFavourites(propertyId){
+    return {
+        type: "REMOVE_FROM_FAVOURITES",
+        payload: propertyId
+    }
 }
