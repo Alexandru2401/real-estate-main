@@ -13,9 +13,9 @@
 
 
 .card-button {
-    width: 130px;
+    width: 160px;
     height: auto;
-    background-color: #008DDA;
+    background-color: #2B3499;
     color: #f7eedd;
     padding: 10px;
     border-radius: 10px;
@@ -27,7 +27,7 @@
 }
 
 .rental-button {
-    width: 130px;
+    width: 160px;
     height: auto;
     background-color: #41C9E2;
     color: #f7eedd;
@@ -38,6 +38,21 @@
     font-size: 15px;
     border: none;
     box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
+}
+
+.delete-button {
+    width: 160px;
+    height: auto;
+    background-color: red;
+    color: #f7eedd;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
+    margin-bottom: var(--space-sm);
 }
 /* Navbar style */
 .bg-container {
@@ -51,7 +66,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    background-color: #008DDA;
+    background-color:#F3B664;
     position: absolute;
     top: var(--space-sm);
     left: 5%;
@@ -75,7 +90,7 @@
 }
 .navbar-links a {
     text-decoration: none;
-    color: #f7eedd;
+    color: #2B3499;
 }
 
 ul a:hover {
@@ -173,8 +188,8 @@ ul a:hover {
     padding: var(--space-lg) 0px;
 }
 .section-container {
-    background-color: #e0f1fc;
-    padding-bottom: var(--space-lg);
+    background-color: #FFD099;
+    /* padding-bottom: var(--space-lg); */
     width: 100%;
 }
 
@@ -185,12 +200,12 @@ ul a:hover {
 /* Home page style ends here */
 
 /* Listed-section style */
-.rent-section{
+/* .rent-section{
     width: 100%;
     display: flex;
     justify-content: center;
     padding: var(--space-lg);
-} 
+}  */
 
 .rent-section .listed-section-container{
     display: flex;
@@ -205,8 +220,8 @@ ul a:hover {
 }
 .card-title{
     font-size: 25px;
-    color: #008DDA;
-    margin: 0px 0px var(--space-md) 0px;
+    color: #2B3499;
+    padding: var(--space-md) 0px;
 }
 .rent-section .rent-section-card {
     margin-top: var(--space-lg);
@@ -236,7 +251,7 @@ ul a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ACE3E1;
+    background-color: #41C9E2;
     height: 100px;
     padding: 60px;
     width: 100%;
@@ -247,6 +262,139 @@ ul a:hover {
 }
 
 /* Footer style ends here */
+
+
+/* Card details */
+
+.details-section-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.details-card .card-details-title{
+    color: #008DDA;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.details-card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    border: 1px solid red;
+    width: 40%;
+}
+.details-card img {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+}
+.details-card .card-address {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.details-card .card-description {
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.details-card .card-price {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.details-card .rental-button {
+    margin: 20px auto;
+}
+
+/* Rent section new */
+.product-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.property-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: var(--space-md);
+    background-color: #FFD099;
+    border-radius: 5px;
+}
+
+.property-container .card-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+}
+
+.property-container .card-info {
+    font-size: var(--space-sm);
+    /* margin: var(--space-sm); */
+}
+.property-container .card-description {
+    font-size: var(--space-sm)
+}
+
+.property-container .button-container {
+    margin: var(--space-md);
+}
+
+.property-container .card-button {
+    margin: 0 var(--space-sm);
+}
+
+.home-title a{
+    color: #008DDA;
+}
+
+.home-title a:hover {
+    color: #2B3499;
+}
+
+.rent-section .card-info-container {
+    padding: var(--space-sm) var(--space-sm) 0 var(--space-sm);
+}
+
+.rent-section .card-info-container .card-info {
+    padding: var(--space-sm) 0 0 0;
+}
+
+.product-container {
+    background-color: #F3B664;
+}
+
+.favourite-section-container{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-container h2{
+    color: white;
+    font-size: 50px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.favourite-container {
+    padding:0 0 var(--space-md) 0;
+}
 
 /* Responsive navbar */
 .nav-btn {
@@ -281,7 +429,7 @@ ul a:hover {
         top: 100%;
         transition: all 0.5s ease-in-out;
         width: 100%;
-        background-color: #41C9E2;;
+        background-color: #FFD099;
     }
     .navbar-links-mobile li {
         margin: 10px var(--space-sm);
@@ -366,51 +514,79 @@ ul a:hover {
         width: 100%;
         height: auto;
     }
+
+    .product-section-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .product-section-container .property-container {
+        width: 100%;
+        margin: auto;
+    }
+    .property-container .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .property-container .button-container .card-button {
+        margin-bottom: var(--space-sm);
+    }
+
+    .property-container .card-image {
+        min-height: auto;
+        height: auto;
+    }
+   
+    .details-container .property-container {
+        width: 100%;
+    }
+
+    .details-container {
+        flex-wrap: nowrap;
+    }
+
+    .details-container .title-container .home-title{
+        padding: auto;
+    }
+    .product-container {
+        margin: var(--space-sm);
+    }
+
+    /* Favorite */
+    .product-section-container{
+        margin: 0;
+    }
+    .product-section-container .property-container{
+        padding: var(--space-sm);
+    }
+
+    /* Details */
+    .product-container {
+        margin: 0;
+        padding: var(--space-sm) 0;
+    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .details-container .property-container {
+        width: 100%;
+    }
+    .property-container .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-
-/* Card details */
-
-.details-section-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.details-card .card-details-title{
-    color: #008DDA;
-    font-size: 30px;
-    margin: 20px auto;
-}
-.details-card {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 0;
-    border: 1px solid red;
-    width: 40%;
-}
-.details-card img {
-    width: 80%;
-    height: 400px;
-    margin: 20px auto;
-}
-.details-card .card-address {
-    font-size: 20px;
-    margin: 20px;
-}
-
-.details-card .card-description {
-    font-size: 20px;
-    margin: 20px;
-}
-
-
-.details-card .card-price {
-    font-size: 20px;
-    margin: 20px;
-}
-
-.details-card .rental-button {
-    margin: 20px auto;
+    .property-container .button-container .card-button {
+        margin-bottom: var(--space-sm);
+    }
+    .favourite-container .property-container{
+        width: 100%;
+    }
+    .product-container .property-container .card-image {
+        height: 200px;
+    }
 }

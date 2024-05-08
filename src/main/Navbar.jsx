@@ -8,7 +8,7 @@ export default function Navbar(){
    
     const [mobile, setMobile] = useState(false);
     return (
-       <div className="bg-container" style={{backgroundImage: `url(${bgImg})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center"}}>
+       <div className="bg-container" style={{backgroundImage: `url(${bgImg})` , backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center"}}>
          <nav className="navbar">
             <div className="img-container">
                 <img src={logo} alt="logo" style={{width: "200px"}}/>
@@ -19,7 +19,7 @@ export default function Navbar(){
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="RentSection">For rent</Link></li>
                 <li><Link to="BuySection">For buy</Link></li>
-                <li><Link to="property">Details</Link></li>
+                {/* <li><Link to="property">Details</Link></li> */}
                 <li><Link to="AddToFavourites">Favorites</Link></li>
             </ul>
             <button className="nav-btn" onClick={() =>{

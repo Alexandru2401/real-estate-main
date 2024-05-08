@@ -11,22 +11,11 @@ export function favouriteReducer(state, action){
         return property.id === action.payload.id;
       })
       if(foundProperty){
-        updapedProperties = state.properties.map((property) =>{
-          if (foundProperty.id === property.id) {
-            return {
-              ...property,
-              quantity: property.quantity + 1,
-            }
-          } else {
-            return property
-          }
-        })
+        return state;
       } else {
-        const newProperty = {
-          ...action.payload,
-          quantity : 1
+        return {
+          properties: [...state.properties, action.payload]
         }
-        updapedProperties = [...state.properties, newProperty];
       }
       newState = {
         properties: updapedProperties
