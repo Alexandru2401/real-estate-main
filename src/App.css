@@ -11,23 +11,31 @@
 }
 
 
-
 .card-button {
-    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
     height: auto;
     background-color: #2B3499;
     color: #f7eedd;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
     font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.card-button:hover{
+	color: #2B3499;
+    background-color: #f7eedd;
 }
 
 .rental-button {
-    width: 160px;
+    width: 170px;
     height: auto;
     background-color: #41C9E2;
     color: #f7eedd;
@@ -35,13 +43,22 @@
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     border: none;
     box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
+    transition: all 0.5s ease;
+}
+
+.rental-button:hover{
+    color: #41C9E2;
+    background-color: #f7eedd;
 }
 
 .delete-button {
-    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 170px;
     height: auto;
     background-color: red;
     color: #f7eedd;
@@ -49,11 +66,18 @@
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     border: none;
     box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.64);
     margin-bottom: var(--space-sm);
+    transition: all 0.5s ease;
 }
+
+.delete-button:hover{
+    color: red;
+    background-color: #f7eedd;
+}
+
 /* Navbar style */
 .bg-container {
     height: 70vh;
@@ -343,6 +367,7 @@ ul a:hover {
 
 .property-container .button-container {
     margin: var(--space-md);
+    display: flex;
 }
 
 .property-container .card-button {

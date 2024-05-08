@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { addToFavourites } from "../store/action";
 import { FavouriteContext } from "../store/context";
-
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import CallMadeIcon from '@mui/icons-material/CallMade';
 export function Card(props) {
 
     const {name, image, id, price, address, description, bed , onClick} = props;
@@ -30,8 +31,8 @@ return (
 					id: id,
 					image: image,
 					title: name 
-				})}}>Add to favourites</button>
-		 <Link to={`/property/${id}`}><button className="rental-button">See details</button></Link>
+				})}}>Add to favourites<FavoriteIcon style={{fontSize:"15px"}}/></button>
+		 <Link to={`/property/${id}`}><button className="rental-button">See details<CallMadeIcon style={{fontSize:"20px", marginLeft:"15px", marginBottom:"-5px"}}/></button></Link>
 		</div>
 	</div>
 )
