@@ -5,8 +5,8 @@ import Home from './main/Home';
 import Navbar from './main/Navbar';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { RouterProvider } from 'react-router-dom';
-import RentSection from './components/RentSection';
-import BuySection from './components/BuySection';
+import BuySection from './pages/BuySection';
+import RentSection from './pages/RentSection'
 import AddToFavourites from './components/AddToFavourites';
 import Details from './components/Details';
 import { ProductContainer } from './components/ProductContainer';

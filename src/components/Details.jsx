@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { properties } from './Card'; 
+import { properties } from '../api/property'; 
 import { Card } from './Card';
 import { FavouriteContext } from '../store/context';
 import { useParams } from 'react-router-dom';

@@ -1,10 +1,10 @@
 
 import React, { useContext } from "react";
-import RentSection from "./RentSection";
-import BuySection from "./BuySection";
+import RentSection from "../pages/RentSection";
+import BuySection from "../pages/BuySection";
 import Details from "./Details";
 import { Card } from "./Card";
-import { properties } from "./Card";
+import { properties } from "../api/property";
 import { Link, useParams} from "react-router-dom";
 import { useState } from "react";
 import { addToFavourites } from "../store/action";

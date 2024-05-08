@@ -1,8 +1,8 @@
 import React from "react";
-import { Card } from "./Card";
-import { properties } from "./Card";
+import { Card } from "../components/Card";
+import { properties } from "../api/property";
 
-export default function BuySection(){
+export default function RentSection(){
     return (
         <section className="product-container">
         <div className="see-offers-container">

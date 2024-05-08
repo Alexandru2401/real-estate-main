@@ -519,7 +519,6 @@ ul a:hover {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
     }
 
     .product-section-container .property-container {
@@ -590,3 +589,8 @@ ul a:hover {
         height: 200px;
     }
 }
+
+.details-container .button-container .rental-button{
+    display: none;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "./Card";
-import { properties } from "./Card";
+import { Card } from "../components/Card";
+import { properties } from "../api/property";
 
 export default function BuySection(){
     return (

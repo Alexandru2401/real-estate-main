@@ -1,9 +1,9 @@
 import React from "react";
-import RentSection from "../components/RentSection";
-import BuySection from "../components/BuySection";
-import { AboutUs } from "../components/AboutUs";
+import RentSection from "../pages/RentSection";
+import BuySection from "../pages/BuySection";
+import { AboutUs } from "../pages/AboutUs";
 import { ProductContainer } from "../components/ProductContainer";
-import { WhyTopRent } from "../components/WhyTopRent";
+import { WhyTopRent } from "../pages/WhyTopRent";
 
 export default function Home(){
     return (
