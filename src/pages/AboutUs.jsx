@@ -4,9 +4,9 @@ import logo from "../assets/logo.png";
 export function AboutUs() {
   return (
     <section className="about-section">
-      <div className="img-container">
+      {/* <div className="img-container">
         <img src={logo} alt="" />
-      </div>
+      </div> */}
       <div className="content-container">
         <h2 className="about-title">About us</h2>
         <h3 className="about-second-title">A home for you and your family.</h3>

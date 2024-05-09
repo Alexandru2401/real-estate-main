@@ -21,7 +21,7 @@ export default function AddToFavourites() {
           return (
             <div
               key={property.id}
-              className="property-container favourite-container"
+              className="property-container"
             >
               <img className="card-image" src={property.image} />
               <h2 className="card-title">{property.title}</h2>

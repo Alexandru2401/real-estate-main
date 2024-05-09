@@ -8,6 +8,11 @@
   --space-sm: 20px;
   --space-md: 30px;
   --space-lg: 50px;
+
+  --fs-sm:20px;
+  --fs-md:25px;
+  --fs-lg:30px;
+  --fs-xl:35px;
 }
 
 .card-button {
@@ -31,6 +36,7 @@
 .card-button:hover {
   color: #2b3499;
   background-color: #f7eedd;
+  cursor: pointer;
 }
 
 .rental-button {
@@ -51,6 +57,7 @@
 .rental-button:hover {
   color: #41c9e2;
   background-color: #f7eedd;
+  cursor: pointer;
 }
 
 .delete-button {
@@ -75,6 +82,7 @@
 .delete-button:hover {
   color: red;
   background-color: #f7eedd;
+  cursor: pointer;
 }
 .submit-button {
   display: flex;
@@ -137,7 +145,7 @@
 
 .navbar-links li {
   margin: 0px 35px;
-  font-size: 20px;
+  font-size: var(--fs-sm);
 }
 .navbar-links a {
   text-decoration: none;
@@ -170,19 +178,19 @@ ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--space-lg);
+  padding: var(--space-lg) var(--space-lg) 0 var(--space-lg);
 }
 .about-us-description {
-  font-size: 25px;
+  font-size: var(--fs-md);
   margin: var(--space-sm) auto;
 }
 .about-title {
-  font-size: 30px;
+  font-size: var(--fs-lg);
   margin: 0px 0px var(--space-lg) 0px;
 }
 
 .about-us-quote {
-  font-size: 25px;
+  font-size: var(--fs-md);
 }
 
 .about-us-quote span {
@@ -190,7 +198,7 @@ ul a:hover {
 }
 
 .about-second-title {
-  font-size: 30px;
+  font-size: var(--fs-md);
   margin: 0px 0px var(--space-lg) 0px;
 }
 
@@ -204,7 +212,7 @@ ul a:hover {
   margin: var(--space-lg) auto 0px auto;
 }
 .why-top-rent .section-container {
-  padding: var(--space-lg);
+  padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
 }
 
 .why-top-rent .card-container {
@@ -221,23 +229,23 @@ ul a:hover {
 }
 
 .why-top-title {
-  font-size: 30px;
+  font-size: var(--fs-lg);
   padding: var(--space-md) 0px;
 }
 
 .why-top-rent .quote-paragraph {
-  font-size: 30px;
-  margin: 40px 0px;
+  font-size: var(--fs-md);
+  margin: var(--space-md) 0px;
 }
 .why-us {
-  margin: var(--space-lg) 0;
+  margin: var(--space-md) 0;
 }
 
 /* Why TopRent style ends here */
 
 /* Home page style*/
 .home-title {
-  font-size: 20px;
+  font-size: var(--fs-md);
   padding: var(--space-lg) 0px;
 }
 .section-container {
@@ -247,6 +255,7 @@ ul a:hover {
 
 .see-offers-title {
   margin-top: var(--space-lg);
+  font-size: var(--fs-xl);
 }
 
 /* Home page style ends here */
@@ -264,7 +273,7 @@ ul a:hover {
   height: auto;
 }
 .card-title {
-  font-size: 20px;
+  font-size: var(--fs-md);
   color: #2b3499;
   padding: var(--space-md) 0px;
 }
@@ -286,9 +295,6 @@ ul a:hover {
   justify-content: center;
 }
 
-.see-offers-container > h2 {
-  font-size: 30px;
-}
 /* Product container style ends here */
 
 /* Footer style */
@@ -303,7 +309,7 @@ ul a:hover {
 }
 
 .footer-section p {
-  font-size: 20px;
+  font-size: var(--fs-lg);
 }
 
 /* Footer style ends here */
@@ -318,7 +324,7 @@ ul a:hover {
 }
 .details-card .card-details-title {
   color: #008dda;
-  font-size: 25px;
+  font-size: var(--fs-md);
   margin: 20px auto;
 }
 .details-card {
@@ -334,17 +340,17 @@ ul a:hover {
   margin: 20px auto;
 }
 .details-card .card-address {
-  font-size: 20px;
+  font-size: var(--fs-sm);
   margin: 20px;
 }
 
 .details-card .card-description {
-  font-size: 20px;
+  font-size: var(--fs-md);
   margin: 20px;
 }
 
 .details-card .card-price {
-  font-size: 20px;
+  font-size: var(--fs-sm);
   margin: 20px;
 }
 
@@ -355,7 +361,7 @@ ul a:hover {
 
 /* Property style */
 .product-container {
-  background-color: #f3b664;
+   background-color: #F6F5F2
 }
 .product-section-container {
   display: flex;
@@ -372,6 +378,7 @@ ul a:hover {
   margin: var(--space-md);
   background-color: #ffd099;
   border-radius: 5px;
+  padding: var(--space-sm);
 }
 
 .property-container .card-image {
@@ -380,10 +387,11 @@ ul a:hover {
 }
 
 .property-container .card-info {
-  font-size: var(--space-sm);
+  font-size: var(--fs-sm);
 }
 .property-container .card-description {
-  font-size: var(--space-sm);
+  font-size: var(--fs-md);
+  padding-top: var(--space-md);
 }
 
 .property-container .button-container {
@@ -412,7 +420,7 @@ ul a:hover {
 }
 
 .favourite-container {
-  background-color: #f3b664;
+  background-color: #F6F5F2;
   min-height: 200px;
   display: flex;
   align-items: center;
@@ -427,7 +435,7 @@ ul a:hover {
 
 .details-container h2 {
   color: white;
-  font-size: 30px;
+  font-size: var(--fs-lg);
 }
 
 .title-container {
@@ -480,11 +488,11 @@ form input {
   padding: var(--space-lg);
 }
 .success-message .success-paragraph {
-  font-size: 30px;
+  font-size: var(--fs-lg);
 }
 
 .form-decription {
-  font-size: 30px;
+  font-size: var(--fs-lg);
   margin: 0 var(--space-lg);
 }
 
@@ -527,7 +535,7 @@ form input {
   }
   .navbar-links-mobile li {
     margin: 10px var(--space-sm);
-    font-size: 20px;
+    font-size: var(--fs-sm);
   }
   .navbar-links-mobile a {
     text-decoration: none;
@@ -614,12 +622,8 @@ form input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
+    }
 
-  .product-section-container .property-container {
-    width: 100%;
-    margin: var(--space-sm) auto;
-  }
   .property-container .button-container {
     display: flex;
     flex-direction: column;
@@ -628,6 +632,11 @@ form input {
   .property-container .button-container .card-button {
     margin-bottom: var(--space-sm);
   }
+
+  .property-container .rental-button {
+    margin: var(--space-md) 0 0;
+  }
+
   .details-container .property-container {
     width: 100%;
   }
@@ -645,12 +654,17 @@ form input {
 
   /* Favorite */
   .product-section-container {
-    margin: 0;
+    margin: var(--space-sm);
   }
   .product-section-container .property-container {
     padding: var(--space-sm);
+    margin: var(--space-sm);
   }
 
+  .product-section-container .property-container {
+    width: 100%;
+    margin: var(--space-sm) auto;
+  }
   /* Details */
   .product-container {
     margin: 0;

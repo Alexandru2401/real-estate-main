@@ -16,7 +16,7 @@ export default function Details() {
       <div className="title-container">
         <h2 className="home-title">
           Property details:{" "}
-          <span style={{ color: "#f7eedd" }}>{foundProperty.name}</span>
+          <span style={{ color: "#2b3499" }}>{foundProperty.name}</span>
         </h2>
       </div>
       {/* Afiseaza detalii despre proprietate */}
