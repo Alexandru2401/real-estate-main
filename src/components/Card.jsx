@@ -14,6 +14,7 @@ export function Card(props) {
   function handleAddToFavourite(property){
     const favoriteAction = addToFavourites(property);
     dispatch(favoriteAction);
+	alert("Property was added to favourite!")
   }
 
 return (

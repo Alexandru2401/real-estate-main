@@ -12,7 +12,7 @@ import Details from './components/Details';
 import { ProductContainer } from './components/ProductContainer';
 import { favouriteReducer, initialState } from './store/reducer';
 import { FavouriteContext } from './store/context';
-import { ContactUs } from './components/ContactUs';
+import { ContactUs } from './pages/ContactUs';
 function App () {
   
       const [state, dispatch] = useReducer(favouriteReducer, initialState);

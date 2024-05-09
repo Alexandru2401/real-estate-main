@@ -101,6 +101,11 @@
     color: green;
 }
 
+
+.details-container .button-container .rental-button{
+    display: none;
+}
+
 /* Navbar style */
 .bg-container {
     height: 70vh;
@@ -247,13 +252,6 @@ ul a:hover {
 /* Home page style ends here */
 
 /* Listed-section style */
-/* .rent-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: var(--space-lg);
-}  */
-
 .rent-section .listed-section-container{
     display: flex;
     flex-wrap: wrap;
@@ -355,8 +353,12 @@ ul a:hover {
 .details-card .rental-button {
     margin: 20px auto;
 }
+/* Cards-details ends here */
 
-/* Rent section new */
+/* Property style */
+.product-container{
+    background-color: #F3B664;
+}
 .product-section-container{
     display: flex;
     flex-wrap: wrap;
@@ -382,7 +384,6 @@ ul a:hover {
 
 .property-container .card-info {
     font-size: var(--space-sm);
-    /* margin: var(--space-sm); */
 }
 .property-container .card-description {
     font-size: var(--space-sm)
@@ -413,12 +414,9 @@ ul a:hover {
     padding: var(--space-sm) 0 0 0;
 }
 
-.product-container {
+.favourite-container {
     background-color: #F3B664;
-}
-
-.favourite-section-container{
-    min-height: 20vh;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,8 +441,9 @@ ul a:hover {
 .favourite-container {
     padding:0 0 var(--space-md) 0;
 }
+/* Property style ends here */
 
-/* Form */
+/* Form style */
 .form-container{
     display: flex;
     align-items: center;
@@ -490,6 +489,9 @@ form input {
     font-size: 30px;
     margin: 0 var(--space-lg);
 }
+
+/* Form style ends here */
+
 /* Responsive navbar */
 .nav-btn {
     display: none;
@@ -609,6 +611,7 @@ form input {
         height: auto;
     }
 
+    /* Stilizare property */
     .product-section-container {
         display: flex;
         flex-direction: column;
@@ -617,7 +620,7 @@ form input {
 
     .product-section-container .property-container {
         width: 100%;
-        margin: auto;
+        margin: var(--space-sm) auto;
     }
     .property-container .button-container {
         display: flex;
@@ -641,16 +644,17 @@ form input {
         flex-wrap: nowrap;
     }
 
-    .details-container .title-container .home-title{
-        padding: auto;
+    .product-container .title-container .home-title{
+        margin: 0 var(--space-sm);
     }
     .product-container {
         margin: var(--space-sm);
+
     }
 
     /* Favorite */
     .product-section-container{
-        margin: 0;
+    margin: 0;
     }
     .product-section-container .property-container{
         padding: var(--space-sm);
@@ -683,35 +687,3 @@ form input {
         height: 200px;
     }
 }
-
-.details-container .button-container .rental-button{
-    display: none;
-}
-
-.popup {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 9999;
-  }
-  
-  .popup-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-  }
-  
-  .display-block {
-    display: block;
-  }
-  
-  .display-none {
-    display: none;
-  }
-  

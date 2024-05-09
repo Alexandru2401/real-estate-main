@@ -14,7 +14,7 @@ export default function AddToFavourites(){
         dispatch(actionResult);
     }
     return (
-        <div className="product-section-container product-container">
+        <div className="product-section-container favourite-container">
             {state.properties.length === 0 ? (
                 <p className="home-title">No favourite products</p>
             ) : (
