@@ -1,1 +1,1 @@
-HomeWork
+This project presents a real estate website, where are listed, both for buying and for selling. You can check product details, you can add it to your favourites, and you have a contact page, where you have to fill in a form and the TopRent team will contact you.
