@@ -19,8 +19,8 @@ export default function Navbar(){
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="RentSection">For rent</Link></li>
                 <li><Link to="BuySection">For buy</Link></li>
-                {/* <li><Link to="property">Details</Link></li> */}
                 <li><Link to="AddToFavourites">Favorites</Link></li>
+                <li><Link to="ContactUs">Contact us</Link></li>
             </ul>
             <button className="nav-btn" onClick={() =>{
                 setMobile(!mobile)

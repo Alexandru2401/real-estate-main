@@ -12,6 +12,7 @@ import Details from './components/Details';
 import { ProductContainer } from './components/ProductContainer';
 import { favouriteReducer, initialState } from './store/reducer';
 import { FavouriteContext } from './store/context';
+import { ContactUs } from './components/ContactUs';
 function App () {
   
       const [state, dispatch] = useReducer(favouriteReducer, initialState);
@@ -34,6 +35,7 @@ function App () {
             <Route path='/property/:id' element={<Details/>}></Route>
             <Route path='' element={<ProductContainer/>}></Route>
             <Route path='/AddToFavourites' element={<AddToFavourites/>}></Route>
+            <Route path='/ContactUs' element={<ContactUs/>}></Route>
           </Routes>
         </div>
         <Footer/>
