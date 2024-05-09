@@ -1,4 +1,3 @@
-import { properties } from "../components/Card";
 
 export const initialState = {properties: [],};
 
@@ -17,10 +16,6 @@ export function favouriteReducer(state, action){
           properties: [...state.properties, action.payload]
         }
       }
-      newState = {
-        properties: updapedProperties
-      }
-      return newState;
 
     }  case "REMOVE_FROM_FAVOURITES" : {
       const filteredProperties = state.properties.filter((property) =>{
