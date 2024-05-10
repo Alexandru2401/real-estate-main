@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../components/Card";
+import { PropertyCard } from "../components/PropertyCard";
 import { properties } from "../api/property";
 
 export default function RentSection() {
@@ -11,7 +11,7 @@ export default function RentSection() {
       <div className="product-section-container rent-section">
         {properties.slice(0, 5).map((property) => {
           return (
-            <Card
+            <PropertyCard
               name={property.name}
               image={property.imageUrl}
               description={property.description}

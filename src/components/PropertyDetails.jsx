@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { properties } from "../api/property";
-import { Card } from "./Card";
+import { PropertyCard } from "./PropertyCard";
 import { FavouriteContext } from "../store/context";
 import { useParams } from "react-router-dom";
 
-export default function Details() {
+export default function PropertyDetails() {
   const { state } = useContext(FavouriteContext);
   const { id } = useParams();
   const foundProperty = properties.find(
@@ -24,7 +24,7 @@ export default function Details() {
         <p>Property not found</p>
       ) : (
         <div className="details-container rent-section">
-          <Card
+          <PropertyCard
             key={foundProperty.id}
             id={foundProperty.id}
             title={foundProperty.name}

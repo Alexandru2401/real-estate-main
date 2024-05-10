@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutUs } from "../pages/AboutUs";
-import { ProductContainer } from "../components/ProductContainer";
+import { TopProperties } from "../components/TopProperties";
 import { WhyTopRent } from "../pages/WhyTopRent";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <div className="section-container">
       <AboutUs />
       <WhyTopRent />
-      <ProductContainer />
+      <TopProperties />
     </div>
   );
 }

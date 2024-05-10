@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { Card } from "./Card";
+import { PropertyCard } from "./PropertyCard";
 import { properties } from "../api/property";
 import { Link } from "react-router-dom";
 import { addToFavourites } from "../store/action";
 import { FavouriteContext } from "../store/context";
 
-export function ProductContainer() {
+export function TopProperties() {
   const { dispatch } = useContext(FavouriteContext);
   function handleAddToFavourite(property) {
     const actionResult = addToFavourites(property);
@@ -25,7 +25,7 @@ export function ProductContainer() {
       <div className="product-section-container">
         {properties.slice(0, 5).map((property) => {
           return (
-            <Card
+            <PropertyCard
               key={property.id}
               id={property.id}
               name={property.name}
@@ -46,7 +46,7 @@ export function ProductContainer() {
               <Link to={`/property/${property.id}`}>
                 <button>See details</button>
               </Link>
-            </Card>
+            </PropertyCard>
           );
         })}
       </div>
@@ -58,7 +58,7 @@ export function ProductContainer() {
       <div className="product-section-container">
         {properties.slice(5, 10).map((property) => {
           return (
-            <Card
+            <PropertyCard
               key={property.id}
               name={property.name}
               image={property.imageUrl}
