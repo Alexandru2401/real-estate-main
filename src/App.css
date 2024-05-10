@@ -363,8 +363,9 @@ ul a:hover {
 
 /* Property style */
 .product-container {
-   background-color: #F6F5F2
+   background-color: #F6F5F2;
 }
+
 .product-section-container {
   display: flex;
   flex-wrap: wrap;
@@ -381,6 +382,14 @@ ul a:hover {
   background-color: #ffd099;
   border-radius: 5px;
   padding: var(--space-sm);
+  position: relative;
+}
+.property-container .property-notification {
+  position: absolute;
+  background-color: #F6F5F2;
+  padding: 5px 10px;
+  bottom: 5px;
+  border-radius: 10px;
 }
 
 .property-container .card-image {
@@ -630,9 +639,6 @@ form input {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .property-container .button-container .card-button {
-    margin-bottom: var(--space-sm);
   }
 
   .property-container .rental-button {

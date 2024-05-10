@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { addToFavourites } from "../store/action";
@@ -9,11 +9,15 @@ import CallMadeIcon from "@mui/icons-material/CallMade";
 export function PropertyCard(props) {
   const { name, image, id, price, address, description, bed, onClick } = props;
   const { dispatch } = useContext(FavouriteContext);
+  const [showNotification, setNotification] = useState(false);
 
   function handleAddToFavourite(property) {
     const favoriteAction = addToFavourites(property);
     dispatch(favoriteAction);
-    alert("Property was added to favourite!");
+    setNotification(true);
+    setTimeout(() => {
+      setNotification(false);
+    }, 2000);
   }
 
   return (
@@ -53,6 +57,9 @@ export function PropertyCard(props) {
           </button>
         </Link>
       </div>
+      {showNotification && (
+        <div className="property-notification">Property was added to favourite!</div>
+      )}
     </div>
   );
 }
