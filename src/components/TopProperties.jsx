@@ -43,9 +43,9 @@ export function TopProperties() {
               >
                 Adauga la favorite
               </button>
-              <Link to={`/property/${property.id}`}>
+              {/* <Link to={`/property/${property.id}`}>
                 <button>See details</button>
-              </Link>
+              </Link> */}
             </PropertyCard>
           );
         })}
